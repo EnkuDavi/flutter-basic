@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'font-style.dart';
 
 void main() {
   runApp(const MyApp());
@@ -21,15 +22,19 @@ class MyApp extends StatelessWidget {
           ),
           body: SafeArea(
             child: Container(
+                margin: EdgeInsets.all(20),
                 child: Column(
-              children: <Widget>[
-                Image(
-                  image: AssetImage('assets/images/wallet.jpg'),
-                  height: 200,
-                ),
-                Text("Rich Together")
-              ],
-            )),
+                  children: <Widget>[
+                    Image(
+                      image: AssetImage('assets/images/wallet.jpg'),
+                      height: 200,
+                    ),
+                    Text(
+                      "Rich Together",
+                      style: MainHeader,
+                    )
+                  ],
+                )),
           ),
         ));
   }
