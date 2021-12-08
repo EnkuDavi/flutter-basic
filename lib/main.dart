@@ -18,9 +18,12 @@ class MyApp extends StatelessWidget {
           appBar: AppBar(
             title: Text('Cashy'),
             backgroundColor: Colors.red,
-            actions: <Widget>[
-              IconButton(onPressed: () {}, icon: Icon(Icons.mail)),
-            ],
+          ),
+          body: SafeArea(
+            child: Image(
+              image: AssetImage('assets/images/wallet.jpg'),
+              height: 200,
+            ),
           ),
         ));
   }
